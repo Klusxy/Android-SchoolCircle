@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_bg_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="新闻详情"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/iv_news_detail_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/chat_back_selector" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_news_detail_flag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="校园圈精选"
+            android:textSize="14sp"
+            android:textColor="#FFF"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/content_detail_flag_rect"/>
+        <TextView
+            android:id="@+id/tv_news_detail_flag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农大新闻"
+            android:textSize="13sp"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_news_detail_flag1"
+            android:layout_alignBottom="@+id/tv_news_detail_flag1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_news_detail_flag2"
+            android:layout_marginTop="10dp"
+            android:background="@color/text_color"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tv_news_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_news_detail_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:id="@+id/iv_news_detail_img"
+            android:layout_width="360dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:id="@+id/tv_news_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="70dp"
+            android:textAlignment="center"
+            android:text="校园圈推送"
+            />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_chat_bottom"
+        android:layout_below="@+id/ll_chat_top">
+        <ImageView
+            android:id="@+id/iv_contact_hidden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+
+            android:src="@drawable/ic_biaobiao_2"/>
+        <TextView
+            android:id="@+id/tv_contact_hidden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_contact_hidden"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:text="点击右上角推荐列表，寻找好朋友!"
+            android:textAlignment="center"
+            />
+        <ListView
+            android:id="@+id/lv_scrip_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

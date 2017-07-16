@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <ImageView
+        android:id="@+id/iv_scrip_message_user_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_scrip_message_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_scrip_message_user_img"
+            android:text="嘿嘿嘿"
+            android:layout_alignTop="@+id/iv_scrip_message_user_img"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/tv_scrip_message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tv_contents_user_name"
+            android:layout_alignTop="@+id/iv_scrip_message_user_img"
+            android:layout_marginRight="30dp"
+            android:text="2117年xxxxxx"/>
+    <TextView
+        android:id="@+id/tv_scrip_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/text_color"
+        android:layout_toRightOf="@id/iv_scrip_message_user_img"
+        android:paddingBottom="10dp"
+        android:text="哈哈哈哈啊哈哈哈"/>
+</RelativeLayout>

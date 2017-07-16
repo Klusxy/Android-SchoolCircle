@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_chat_bottom"
+        android:layout_below="@+id/ll_chat_top">
+        <ImageView
+            android:id="@+id/iv_message_hidden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_biaobiao_4"/>
+        <TextView
+            android:id="@+id/tv_message_hidden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_message_hidden"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:text="没人传小纸条，我去买去校园逛逛吧~"
+            android:textAlignment="center"
+            />
+        <ListView
+            android:id="@+id/lv_scrip_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
